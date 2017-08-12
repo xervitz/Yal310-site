@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <title>Bio-Nanomechanics Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {font-family: "Lato", sans-serif}
+        .mySlides {display: none}
+    </style>
+    <body>
+
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card-2">
+                <a class="w3-left" href="http://www.lehigh.edu"><img class="lehigh_logo" src="image/lehigh_logo.png"></a>
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+                <a href="people.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PEOPLE</a>
+                <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESEARCH</a>
+                <a href="https://scholar.google.com/citations?user=z3uUe2MAAAAJ&hl=en&oi=ao" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PUBLICATIONS</a>
+                <a href="openings.html" class="w3-bar-item w3-button w3-padding-large">OPENINGS</a>
+                <a href="facilities.html" class="w3-bar-item w3-button w3-padding-large">FACILITIES</a>
+                <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+                <!--<div class="w3-dropdown-hover w3-hide-small">
+                  <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+                  <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+                    <a href="#" class="w3-bar-item w3-button">Extras</a>
+                    <a href="#" class="w3-bar-item w3-button">Media</a>
+                  </div>
+                </div>-->
+            </div>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+            <a href="#band" class="w3-bar-item w3-button w3-padding-large">BAND</a>
+            <a href="#tour" class="w3-bar-item w3-button w3-padding-large">TOUR</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
+        </div>
+
+        <!-- Page content -->
+        <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+            <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+                <div class="content-center">
+                    <h2 class="w3-wide">Welcome to the Liu Research Lab at Lehigh University</h2>
+                    <p class="w3-justify">Our primary research interest is Micro/NanoEngineering for Biology and Medicine, in particular, using combined computational and experimental fluid/solid mechanics approaches to characterize the interfacial phenomena at the micro/nano scale and in biological systems. Examples include fluid-structure interaction, particulate and multiphase flow, blood rheology, biomedical device (artificial heart, valves, stents, etc) design, electromagnetic manipulation of bio-nanoparticles, DNA sequencing in functionalized nanopores, etc. Current efforts focus on two emerging applications of bio-nanotechnology: Nanomedicine and Biosensing which involves and multiscale modeling, biofluid mechanics, image-based simulation, MEMS fabrication, microfluidic chip testing, nanoparticle adhesion dynamics, and cell manipulation.</p>
+                    <img src="image/logo.PNG" alt="This is where the logo would be IF THE IMAGE EXISTED!">
+                </div>
+                <div class="sidebar">
+                    this is text
+                </div>
+            </div>
+
+
+            <!-- Footer -->
+            <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+                <p class="w3-medium"></p>
+            </footer>
+
+            <script>
+            // Used to toggle the menu on small screens when clicking on the menu button
+                function myFunction() {
+                    var x = document.getElementById("navDemo");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else {
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+
+            // When the user clicks anywhere outside of the modal, close it
+                var modal = document.getElementById('ticketModal');
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <title>Bio-Nanomechanics Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {font-family: "Lato", sans-serif}
+        .mySlides {display: none}
+    </style>
+    <body>
+
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card-2">
+                <a class="w3-left" href="http://www.lehigh.edu"><img class="lehigh_logo" src="image/lehigh_logo.png"></a>
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+                <a href="people.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PEOPLE</a>
+                <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESEARCH</a>
+                <a href="https://scholar.google.com/citations?user=z3uUe2MAAAAJ&hl=en&oi=ao" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PUBLICATIONS</a>
+                <a href="openings.html" class="w3-bar-item w3-button w3-padding-large">OPENINGS</a>
+                <a href="facilities.html" class="w3-bar-item w3-button w3-padding-large">FACILITIES</a>
+                <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+                <!--<div class="w3-dropdown-hover w3-hide-small">
+                  <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+                  <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+                    <a href="#" class="w3-bar-item w3-button">Extras</a>
+                    <a href="#" class="w3-bar-item w3-button">Media</a>
+                  </div>
+                </div>-->
+            </div>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+            <a href="#band" class="w3-bar-item w3-button w3-padding-large">BAND</a>
+            <a href="#tour" class="w3-bar-item w3-button w3-padding-large">TOUR</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
+        </div>
+
+        <!-- Page content -->
+        <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+            <!-- The Band Section -->
+            <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+                <h2>Yaling Liu</h2>
+                <br>
+                <strong>Department of Mechanical Engireening & Mechanics<br>
+                    Bioengineering Program<br>
+                    Lehigh University<br><br><br></strong>
+
+
+                Office Address:<br>
+                558 Packard Lab<br>
+                19 Memorial Drive West<br>
+                Bethlehem,PA 18015<br><br>
+                
+                Lab Address:<br>
+                326 Sinclair Lab<br>
+                7 Asa Drive<br>
+                Bethlehem,PA 18015<br><br>
+
+                Student office:<br>
+                327 Sinclair Lab<br><br>
+
+                Email: yal310.at.lehigh.edu<br><br>
+
+                Tel: (610) 758-5839<br><br>
+
+                Fax: (610) 758-6224<br><br>
+            </div>
+
+
+            <!-- Footer -->
+            <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+                <p class="w3-medium"></p>
+            </footer>
+
+            <script>
+                // Used to toggle the menu on small screens when clicking on the menu button
+                function myFunction() {
+                    var x = document.getElementById("navDemo");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else {
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                var modal = document.getElementById('ticketModal');
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+
+    </body>
+</html>
